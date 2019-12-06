@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>WAW</fullName>
+        <default>true</default>
+        <label>WAW</label>
+    </customValue>
+    <customValue>
+        <fullName>WRO</fullName>
+        <default>false</default>
+        <label>WRO</label>
+    </customValue>
+    <customValue>
+        <fullName>POZ</fullName>
+        <default>false</default>
+        <label>POZ</label>
+    </customValue>
+    <customValue>
+        <fullName>LDZ</fullName>
+        <default>false</default>
+        <label>LDZ</label>
+    </customValue>
+    <customValue>
+        <fullName>PRG</fullName>
+        <default>false</default>
+        <label>PRG</label>
+    </customValue>
+    <masterLabel>Location Code</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

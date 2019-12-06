@@ -1,0 +1,3 @@
+// 1. CREATE SCRATCH ORG WITH AN ALIAS <alias>
+------------------------------------------------------------------------------------------
+sfdx force:org:create -f config/project-scratch-def.json -a <ORG_ALIAS> --durationdays 30 --setdefaultusername
