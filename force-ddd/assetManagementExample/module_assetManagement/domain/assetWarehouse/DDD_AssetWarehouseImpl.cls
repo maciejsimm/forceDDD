@@ -1,12 +1,16 @@
 public class DDD_AssetWarehouseImpl extends DomainObjectBase implements DDD_AssetWarehouse {
 
+    public DDD_AssetWarehouseImpl() {
+        this.availableAssetsQuantity = new Map<String, Integer>();
+    }
+
     public DDD_Asset assignAsset(String assetType, Date assignmentStartDate, String employeeId) {
         
         DDD_Asset assetToAssign = this.getSpareAssetToAssign(assetType, assignmentStartDate);
 
         // Validating asset availability
         if (assetToAssign == null) {
-            throw new AssetUnavailableException();
+            throw new AssetUnavailableException('No asset available');
         }        
 
         // Assigning asset (using asset methods)
@@ -19,9 +23,6 @@ public class DDD_AssetWarehouseImpl extends DomainObjectBase implements DDD_Asse
     
     public class AssetUnavailableException extends Exception {}
 
-    @testVisible
-    private Map<String, Integer> availableAssetsQuantity {get;set;}
-
     private DDD_Asset getSpareAssetToAssign(String assetType, Date fromDate) {
         if (availableAssetsQuantity.containsKey(assetType)) {
             Integer assetQuantity = availableAssetsQuantity.get(assetType);
@@ -30,6 +31,17 @@ public class DDD_AssetWarehouseImpl extends DomainObjectBase implements DDD_Asse
             }
         }
         return null;
+    }
+
+    // ---------------------------------------------------------------------------------
+    // Inner Entity Properties
+    // ---------------------------------------------------------------------------------
+    
+    @testVisible
+    private Map<String, Integer> availableAssetsQuantity {get;set;}
+    
+    public void setAssetQuantity(String assetType, Integer quantity) {
+        this.availableAssetsQuantity.put(assetType, quantity);
     }
 
 }

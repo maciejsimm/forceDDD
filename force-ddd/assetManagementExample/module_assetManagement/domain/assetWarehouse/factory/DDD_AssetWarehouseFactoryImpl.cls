@@ -7,6 +7,13 @@ public class DDD_AssetWarehouseFactoryImpl implements DDD_AssetWarehouseFactory 
         assetWarehouse.setRecordId(warehouseCode);
         assetWarehouse.construct();
 
+        // for (Asset__c assets : availableAssets) {
+        //     setAssetQuantity
+        // }
+
+        assetWarehouse.setAssetQuantity('Laptop 13 inch', 2);
+        assetWarehouse.setAssetQuantity('Laptop 15 inch', 5);
+
         return assetWarehouse;
 
     }
