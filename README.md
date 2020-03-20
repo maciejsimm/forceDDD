@@ -4,7 +4,11 @@ This repository presents how to apply Domain Driven Design principles on Salesfo
 
 ## Presentation
 
-https://docs.google.com/presentation/d/1WEdQpqmoI7zKm3rqJ19jf5hwtJpLlWNWscIotFZhpvA/edit?usp=sharing
+https://drive.google.com/file/d/13YTFm4_9A-S1z8-VGkXr2i29IgmkdKyY/view?usp=sharing
+
+## London's Calling 2020 Presentation
+
+link to be provided
 
 ## Build steps
 
@@ -15,3 +19,7 @@ https://docs.google.com/presentation/d/1WEdQpqmoI7zKm3rqJ19jf5hwtJpLlWNWscIotFZh
 2. Push the code
 
 `sfdx force:source:push`
+
+## Sample implementation code
+
+Take a look at force-ddd/assetManagementExample/module_assetMgmt
