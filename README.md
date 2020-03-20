@@ -1,10 +1,14 @@
 # Force DDD
 
 This repository presents our idea on how to apply Domain Driven Design principles on Salesforce Platform.
+
 Please note this is work-in-progress :-)
+
 Feel free to comment & collaborate!
 
+
 Build by @enxooteam members:
+
 @maciejsimm, Konrad Karaś and others
 
 ## Presentation
