@@ -11,9 +11,9 @@ Build by @enxooteam members:
 
 https://drive.google.com/file/d/13YTFm4_9A-S1z8-VGkXr2i29IgmkdKyY/view?usp=sharing
 
-## London's Calling 2020 Presentation
+#### London's Calling 2020 Presentation Recording
 
-link to be provided
+link to be provided soon
 
 ## Build steps
 
