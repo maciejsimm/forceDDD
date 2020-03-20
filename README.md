@@ -31,4 +31,4 @@ link to be provided soon
 
 ## Sample implementation code
 
-Take a look at force-ddd/assetManagementExample/module_assetMgmt
+Take a look at `force-ddd/assetManagementExample/module_assetMgmt`
